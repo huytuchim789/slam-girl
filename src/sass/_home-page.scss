@@ -1,0 +1,644 @@
+.home-page {
+  section {
+    padding: 64px 0;
+
+    .title,
+    .section__header {
+      flex-direction: column;
+      display: flex;
+      align-self: flex-start;
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .home.section {
+    padding: 0;
+    &:not(.feature) {
+      position: relative;
+      min-height: 100vh;
+      padding-top: 87px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+  }
+
+  .Why__NFTify {
+    padding-top: 100px !important;
+  }
+
+  .backed__by {
+    padding: 50px 0 112px;
+  }
+
+  .our__team {
+    padding-bottom: 0;
+    .container {
+      position: relative;
+    }
+    .advisor {
+      margin-bottom: 32px;
+    }
+    .section__content {
+      max-width: 581px;
+      margin: 0 auto 48px;
+
+      span {
+        color: $color_red_1;
+      }
+    }
+    .card__section {
+      margin: 0 0 130px;
+      display: grid;
+      grid-row-gap: 92px !important;
+      grid-column-gap: 16px;
+    }
+    .team__card {
+      cursor: pointer;
+      position: relative;
+      &__title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        bottom: -60px;
+        pointer-events: none;
+        .name,
+        .role {
+          text-align: center;
+        }
+      }
+
+      .img__wrapper {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(17, 12, 59, 0) 63.02%,
+            #110b3b 100%
+          );
+          border-radius: 27px;
+        }
+        > img {
+          width: 100%;
+          height: auto;
+          border-radius: 27px;
+        }
+      }
+
+      &:hover {
+        .team__card__title {
+          display: none;
+        }
+        .img__wrapper {
+          margin-bottom: 0;
+        }
+        .see__more {
+          display: flex;
+        }
+        @-webkit-keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .see__more {
+      display: none;
+      border-radius: 20px;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 7, 39, 0.5);
+      -webkit-animation: fadeIn ease 1s;
+      animation: fadeIn ease 1s;
+      padding: 56px 16px;
+      text-align: left;
+      overflow-wrap: break-word;
+
+      .role {
+        margin-bottom: 16px;
+      }
+      & > p,
+      h5 {
+        text-align: left;
+      }
+      h5,
+      p {
+        color: white;
+      }
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.3%;
+        color: $color_red_1;
+      }
+    }
+  }
+
+  .home {
+    .container {
+      display: flex;
+      align-items: center;
+      &.container--full {
+        height: calc(100vh - 87px);
+        max-width: 1679px;
+        justify-content: center;
+        min-height: 600px;
+      }
+      .container_left,
+      .conatiner_right {
+        flex: 1 1 50%;
+      }
+      .conatiner_right {
+        display: flex;
+
+        img {
+          width: 100%;
+          height: auto;
+          -o-object-fit: contain;
+          object-fit: contain;
+        }
+      }
+      .content_left {
+        width: 100%;
+        display: grid;
+        font-style: normal;
+        font-weight: normal;
+        height: 100%;
+        align-content: center;
+        .question {
+          position: relative;
+          &::after {
+            display: flex;
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 53px;
+            height: 4px;
+            background-color: white;
+          }
+        }
+        .title {
+          &_label {
+            font-size: 72px;
+            line-height: 88px;
+            text-align: left;
+            margin-bottom: 0px;
+          }
+        }
+        .content {
+          max-width: 632px;
+
+          &_label {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.001em;
+            margin-bottom: 0px;
+            font-weight: 400;
+            color: var(--color_text);
+          }
+        }
+        .features {
+          &_label {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -0.003em;
+            margin-bottom: 0px;
+          }
+        }
+
+        .list {
+          display: flex;
+          margin-top: 18px;
+
+          flex-wrap: wrap;
+          .item {
+            margin-right: 33px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.our__team {
+  .name {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.3%;
+    font-weight: 500;
+    color: var(--color_text);
+    margin: 0;
+  }
+  .role,
+  p {
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: -0.1%;
+    font-weight: 400;
+    color: var(--color_text);
+    margin: 0;
+  }
+  .card__section {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: $breakpoint_ultra_desktop_max) {
+  .home-page {
+    .section {
+      padding: 32px 0;
+      .title,
+      .section__header {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 12px;
+
+        .section__content {
+          font-size: 13px;
+          line-height: 19px;
+        }
+      }
+    }
+    .home {
+      .container {
+        .conatiner_right {
+          img {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+          }
+        }
+        .container_left {
+          .title {
+            margin-bottom: 20px;
+            &_label {
+              font-size: 48px;
+              line-height: 59px;
+            }
+          }
+
+          .content_label {
+            font-size: 13px;
+            line-height: 19px;
+          }
+
+          .list {
+            .item {
+              img {
+                width: 45px;
+                height: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our__team {
+    .name {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 3px;
+    }
+
+    .role,
+    p {
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    // .card__section {
+    //   display: grid;
+    //   grid-template-columns: repeat(5, 1fr);
+    //   max-width: none !important;
+    //   grid-gap: 16px;
+    //   align-items: flex-start;
+    //   .team__card {
+    //     max-width: none;
+    //     margin-right: 0;
+
+    //     .img__wrapper > img {
+    //       width: 100%;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media (max-width: $breakpoint_extra_large_desktop_max) {
+  .home-page {
+    .home {
+      .container {
+        .container_left {
+          width: 40%;
+          .image {
+            height: 75%;
+          }
+        }
+
+        .conatiner_right {
+          .title_label {
+            font-size: 48px;
+            line-height: 57px;
+          }
+        }
+      }
+    }
+
+    .our__team {
+      .team__card {
+        &:hover .see__more {
+          margin-bottom: 43px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_medium_large_desktop_max) {
+  .home-page {
+    .our__team {
+      .card__section {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_large_desktop_max) {
+  .home-page {
+    .home {
+      height: auto;
+      max-height: none;
+      &::after {
+        width: 200%;
+        height: 200%;
+        display: block !important;
+        background: radial-gradient(
+          57.76% 54.76% at 50% 50%,
+          rgba(45, 39, 255, 0.4) 0%,
+          rgba(191, 9, 255, 0) 100%
+        );
+      }
+      .container {
+        .container_left {
+          .title_label {
+            font-size: 32px;
+            line-height: 39px;
+          }
+        }
+        .conatiner_right {
+          width: 60%;
+          z-index: 1;
+        }
+      }
+    }
+
+    .Why__NFTify {
+      padding-top: 32px !important;
+    }
+
+    .our__team {
+      .team__card {
+        max-width: none;
+        text-align: center;
+
+        .img__wrapper {
+          &::after {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &:hover {
+          .img__wrapper {
+            margin-bottom: 0;
+          }
+
+          .see__more {
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) {
+  .home-page {
+    .home {
+      max-height: 800px;
+    }
+    .our__team {
+      .card__section {
+        grid-template-columns: repeat(3, 1fr);
+        .team__card {
+          flex: 1 1 100%;
+          width: 100%;
+
+          &:hover {
+            .see__more {
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+    .home {
+      .container {
+        flex-direction: column;
+        .container_left,
+        .conatiner_right {
+          width: 100%;
+          max-width: none;
+        }
+        .conatiner_right {
+          .title_label {
+            font-size: 30px;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) {
+  .home-page {
+    .home {
+      .container {
+        .content_left {
+          .list {
+            justify-content: start;
+            .item {
+              margin: 0 12px 0 0;
+            }
+          }
+        }
+        .conatiner_right {
+          img {
+            margin: 0 auto;
+            max-width: 344px;
+            max-height: 285px;
+          }
+        }
+
+        &.container--full {
+          .container_left {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .background__blur.blur--2 {
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media (max-width: $breakpoint_tablet_max) {
+  .home-page {
+    .our__team {
+      .card__section {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+.tooltip {
+  &.ant-tooltip {
+    max-width: none;
+  }
+  .ant-tooltip {
+    &-inner {
+      font-size: 14px;
+      line-height: 36px;
+      color: var(--color_text);
+      padding: 11px 32px;
+      background: var(--color_card);
+
+      border: 1px solid #ffffff;
+      box-shadow: 0px 4px 10px rgba(11, 8, 41, 0.2);
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+      border-radius: 3px;
+    }
+
+    &-arrow {
+      width: 20px;
+      height: 20px;
+      display: none;
+
+      z-index: 1;
+
+      &-content {
+        background: var(--color_card);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) {
+  .tooltip {
+    .ant-tooltip {
+      &-inner {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_mobile_max) {
+  .home-page {
+    .home:not(.feature) {
+      max-height: none;
+      height: auto;
+      min-height: 100vh;
+      .container {
+        .content_left {
+          .list {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(6, 1fr);
+
+            .item {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .our__team {
+      .card__section {
+        .team__card {
+          max-width: 278px;
+          margin-right: auto;
+          margin-left: auto;
+
+          .see__more {
+            display: block;
+            opacity: 0;
+            -webkit-animation: none;
+            animation: none;
+
+            h5,
+            p,
+            div {
+              display: none;
+            }
+
+            span {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

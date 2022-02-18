@@ -1,0 +1,31 @@
+.token-information {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20%;
+  .content {
+    background: var(--color_card);
+    border-radius: 10px;
+    max-width: 456px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    .title {
+      margin-top: 51px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: var(--color_text_title);
+    }
+    .label--contract {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color_text);
+      margin-top: 26px;
+    }
+  }
+}

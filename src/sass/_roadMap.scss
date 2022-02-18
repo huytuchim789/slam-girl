@@ -1,0 +1,152 @@
+.Roadmap {
+  &--header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    &.ant-typography {
+      font-size: 16px;
+      font-weight: 500;
+      color: $color_primary;
+      max-width: 575px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &--body {
+    justify-content: space-between;
+    .item {
+      padding: 30px 45px;
+      background: var(--color_card);
+      border-radius: 10px;
+      color: $color_white;
+      width: calc(25% - (0.75 * 80px));
+      position: relative;
+
+      &:not(:last-child) {
+        &:after {
+          content: "";
+          background: url("../resources/images/double_arrow.png") center center;
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          position: absolute;
+          left: calc(100% + 20px);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      .list {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        &-title {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          line-height: 30px;
+        }
+        &-content {
+          font-size: 16px;
+          display: flex;
+          margin-bottom: 5px;
+          line-height: 30px;
+          color: var(--color_text);
+          position: relative;
+          padding-left: 25px;
+
+          &:before {
+            content: "";
+            min-width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: $color_circle_dark;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_ultra_desktop_max) {
+  .Roadmap {
+    &--body {
+      .item {
+        padding: 36px 32px 44px;
+
+        &-title {
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 25px;
+        }
+
+        .list {
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+          &-title {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 8px;
+          }
+          &-content {
+            font-size: 13px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_medium_large_desktop_max) {
+  .Roadmap {
+    &--body {
+      .item {
+        width: calc(25% - (0.75 * 15px));
+        padding: 30px 25px;
+
+        &:not(:last-child):after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) {
+  .Roadmap {
+    &--body {
+      .item {
+        width: calc(50% - (0.5 * 15px));
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_mobile_max) {
+  .Roadmap {
+    &--body {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

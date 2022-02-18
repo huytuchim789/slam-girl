@@ -1,0 +1,146 @@
+.Why__NFTify {
+  &--header {
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--body {
+    justify-content: space-between;
+  }
+
+  .item {
+    &__content {
+      max-width: 368px;
+    }
+
+    .image__wrapper {
+      margin-bottom: 32px;
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      background: var(--color_icon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: auto;
+      }
+
+      &--0 {
+        img {
+          width: 32px;
+        }
+      }
+
+      &--1 {
+        img {
+          width: 33px;
+        }
+      }
+
+      &--2 {
+        img {
+          width: 40px;
+        }
+      }
+
+      &--3 {
+        img {
+          width: 32px;
+        }
+      }
+    }
+
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--color_text);
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_ultra_desktop_max) {
+  .Why__NFTify {
+    .item {
+      flex: 0 1 24%;
+      max-width: 408px;
+      border-radius: 10px;
+      padding: 20px 55px 0 0;
+
+      .image__wrapper {
+        width: 48px;
+        height: 48px;
+
+        &--0 img {
+          width: 24px;
+        }
+        &--2 img {
+          width: 30px;
+        }
+        &--3 img {
+          width: 26px;
+        }
+        &--4 img {
+          width: 22px;
+        }
+      }
+
+      h5 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint_tablet_max) {
+  .Why__NFTify {
+    .item {
+      flex: 1 1 100%;
+      width: 100%;
+      max-width: none;
+      padding: 20px 0 0 0;
+
+      &__content {
+        margin: 0 auto !important;
+        max-width: none;
+      }
+    }
+
+    &--body {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_large_desktop_max) {
+  .Why__NFTify {
+    padding-bottom: 40px !important;
+
+    &--body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+  }
+}

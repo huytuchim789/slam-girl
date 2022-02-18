@@ -1,0 +1,30 @@
+image: docker:latest
+services:
+  - docker:dind
+cache:
+  paths:
+    - node_modules/
+
+deploy-app:
+  image: nikolaik/python-nodejs:latest
+  stage: deploy-app
+  only:
+    - master
+  variables:
+    REACT_APP_API_URL: http://18.139.37.132:3000
+  script:
+    - npm install
+    - CI=false npm run build
+    - pip3 install awscli
+    - aws configure set profile nftify.network
+    - aws configure set aws_access_key_id "$AWS_KEY"
+    - aws configure set aws_secret_access_key "$AWS_SECRET"
+    - ((aws s3api create-bucket --acl public-read  --bucket nftify.network && echo 'Created bucket.') || echo 'Already existing bucket.')
+    - aws s3api put-bucket-website --bucket nftify.network --website-configuration file://gitlab-ci-config/website.json
+    - aws s3api put-bucket-policy --bucket nftify.network --policy file://gitlab-ci-config/policy-dev.json
+    - aws s3 sync ./build/ s3://nftify.network
+
+    - aws cloudfront create-invalidation --distribution-id ETA3UM875R7GO --paths "/*"
+
+stages:
+  - deploy-app

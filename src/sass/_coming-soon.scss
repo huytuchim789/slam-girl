@@ -1,0 +1,337 @@
+.coming-soon {
+  .ant-modal {
+    top: 50px;
+    &-content {
+      border-radius: 16px;
+      box-shadow: 0px 0px 100px 30px rgba(74, 35, 235, 0.46);
+      background-color: var(--color_coming-soon_bg);
+
+      a {
+        position: absolute;
+
+        .ant-image img {
+          border-radius: 16px;
+        }
+      }
+      .ant-modal {
+        &-body {
+          // padding-left: 174px;
+          // padding-right: 142px;
+          padding: 0 !important;
+        }
+      }
+
+      .ant-col > .ant-img {
+        max-width: 475px;
+      }
+
+      h4.ant-typography {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        color: var(--color_coming-soon_text);
+      }
+
+      h1.ant-typography {
+        color: var(--color_title);
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -0.01em;
+        margin-bottom: 12px;
+        margin-top: 0;
+
+        .primary {
+          color: $color_red_1;
+
+          span {
+            color: var(--color_title);
+          }
+        }
+      }
+
+      .ant-typography {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.3%;
+        color: var(--color_coming-soon_text);
+        margin-bottom: 32px;
+      }
+
+      .list-button {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+      }
+
+      .btn--linear {
+        min-height: 48px;
+        width: 100%;
+        padding: 0;
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+
+      .social {
+        margin-top: 45px;
+        a:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_extra_large_desktop_max) {
+  .coming-soon {
+    .ant-modal {
+      width: 1000px !important;
+      max-width: 94vw;
+
+      &-content {
+        .ant-modal {
+          &-body {
+            padding-left: 80px;
+            padding-right: 70px;
+          }
+        }
+      }
+
+      h1.ant-typography {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 6px;
+      }
+
+      .ant-typography {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+
+      .social {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.notification-btn {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  position: fixed;
+  top: auto;
+  z-index: 10;
+  right: 29px;
+  background: linear-gradient(180deg, #ff82b4 0%, #ff0a6c 100%);
+  box-shadow: var(--box-shadow_coming-soon);
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 12px;
+  bottom: 54px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: linear-gradient(180deg, #ff82b4 0%, #ff0a6c 100%);
+  }
+
+  img {
+    -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-3px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(3px, 0, 0);
+    }
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-3px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(3px, 0, 0);
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) and (min-width: $breakpoint_mobile_max + 1) {
+  .coming-soon {
+    .ant-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_desktop_max) {
+  .coming-soon {
+    .ant-modal {
+      &-content {
+        .ant-modal {
+          &-body {
+            padding: 50px 20px 75px 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_mobile_max) {
+  .coming-soon {
+    .ant-modal {
+      margin: 0 auto;
+      top: 30px;
+
+      &-content {
+        .ant-modal {
+          &-body {
+            padding: 70px 32px 94px 32px;
+          }
+        }
+
+        .list-button {
+          width: 100%;
+        }
+
+        h4.ant-typography {
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: -0.003em;
+          margin-bottom: 4px;
+        }
+
+        h1.ant-typography {
+          font-size: 32px;
+          line-height: 32px;
+
+          span:not(:first-child) {
+            margin-top: 4px;
+            display: inline-block;
+          }
+        }
+
+        .ant-typography {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .btn--linear {
+      padding: 0 16px;
+      min-height: 40px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .column-left {
+      text-align: center;
+    }
+
+    .social {
+      margin-top: 28px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .ant-image {
+        width: 35px !important;
+        height: 35px !important;
+      }
+
+      img {
+        width: 35px;
+        height: unset !important;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint_extra_large_desktop_max) {
+  .coming-soon {
+    .ant-modal {
+      .column-left {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint_desktop_max) {
+  .coming-soon {
+    overflow: unset;
+    display: flex;
+    align-items: center;
+
+    > .ant-modal {
+      top: 0;
+      height: 75vh;
+      padding: 0;
+      max-height: 750px;
+    }
+
+    // .ant-modal-content {
+    //   height: 100%;
+    // }
+
+    .ant-modal-body {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

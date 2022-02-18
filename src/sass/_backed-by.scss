@@ -1,0 +1,253 @@
+.backed__by {
+  h4 {
+    margin-bottom: 56px;
+
+    &.partners {
+      margin-top: 66px;
+    }
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px !important;
+  }
+
+  .ant-card {
+    border-radius: 10px;
+    background: var(--color_card);
+    border: none;
+    height: 82px;
+
+    &-body {
+      text-align: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_tablet_max) {
+  .backed__by {
+    .ant-row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h4 {
+      margin-bottom: 36px;
+
+      &.partners {
+        margin-top: 30px;
+      }
+    }
+
+    .ant-card {
+      &-body {
+        min-width: 267px;
+      }
+    }
+
+    img {
+      height: 44px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_ultra_desktop_max) {
+  .backed__by {
+    &__section {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_medium_large_desktop_max) {
+  .backed__by {
+    &__section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (max-width: $breakpoint_desktop_max) {
+  .backed__by {
+    &__section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: $breakpoint_tablet_max) {
+  .backed__by {
+    .ant-card {
+      margin: 0 0 8px;
+      width: 100%;
+      min-width: 0;
+      height: 65px;
+
+      &-body {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+
+        .logo--1 {
+          height: 35px;
+        }
+        .logo--2 {
+          height: 30px;
+        }
+        .logo--3 {
+          height: 35px;
+        }
+        .logo--4 {
+          height: 38px;
+        }
+        .logo--5 {
+          height: 70px;
+        }
+        .logo--6 {
+        }
+        .logo--7 {
+        }
+        .logo--8 {
+          height: 50px;
+        }
+        .logo--9 {
+          height: 48px;
+        }
+        .logo--10 {
+          height: 54px;
+        }
+        .logo--11 {
+        }
+        .logo--dfg {
+          height: 35px;
+        }
+        .logo--magnus {
+          height: 45px;
+        }
+        .logo--m6 {
+          height: 35px;
+        }
+        .logo--gd10 {
+          height: 35px;
+        }
+        .logo--gx {
+          height: 35px;
+        }
+        .logo--x21 {
+          height: 35px;
+        }
+        .logo--master {
+          height: 35px;
+        }
+        .logo_fomocraft {
+          height: 35px;
+        }
+        .logo--das_kapital {
+          height: 40px;
+        }
+        .logo--moonrock {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_mobile_max) {
+  .backed__by {
+    .ant-card-body {
+      img {
+        max-width: 100%;
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+
+      .logo--1 {
+      }
+      .logo--2 {
+      }
+      .logo--3 {
+      }
+      .logo--4 {
+        height: 39px;
+      }
+      .logo--5 {
+        height: 66px;
+        width: auto;
+      }
+      .logo--6 {
+        height: 32px;
+        width: auto;
+      }
+      .logo--7 {
+        height: 37px;
+        width: auto;
+      }
+      .logo--8 {
+        height: 37px;
+        width: auto;
+      }
+      .logo--9 {
+        height: 37px;
+        width: auto;
+      }
+      .logo--10 {
+      }
+      .logo--11 {
+        height: 40px;
+        width: auto;
+      }
+      .logo--dfg {
+        height: 25px;
+        width: auto;
+      }
+      .logo--magnus {
+        height: 32px;
+        width: auto;
+      }
+      .logo--m6 {
+        height: 22px;
+        width: auto;
+      }
+      .logo--gd10 {
+        height: 22px;
+        width: auto;
+      }
+      .logo--gx {
+        height: 22px;
+        width: auto;
+      }
+      .logo--x21 {
+        height: 26px;
+        width: auto;
+      }
+      .logo--master {
+        height: 22px;
+        width: auto;
+      }
+      .logo_fomocraft {
+        height: 22px;
+        width: auto;
+      }
+      .logo--das_kapital {
+        height: 22px;
+        width: auto;
+      }
+      .logo--moonrock {
+        height: 22px;
+        width: auto;
+      }
+      .logo--inclusion {
+      }
+    }
+  }
+}

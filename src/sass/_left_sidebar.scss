@@ -1,0 +1,49 @@
+.left_sidebar {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: rgba(21, 18, 58, 0.5);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+  .logo_container {
+    background: url('./../resources/images/Logo_slam.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #ffffff;
+    height: $nav_height;
+    margin-bottom: 20px;
+  }
+  &__header {
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    margin-bottom: 16px;
+    line-height: 25px;
+  }
+  .datetime_countdown {
+    .datetime_item {
+      margin-bottom: 8px;
+      .datetime_value {
+        display: block;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 28px;
+        font-family: 'Mark Pro-Bold';
+      }
+      .datetime_label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 28px;
+        font-family: 'Quicksand';
+      }
+    }
+  }
+}

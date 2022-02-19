@@ -1,39 +1,67 @@
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../resources/fonts/helveticaneuelight.ttf") format("truetype");
+  font-family: 'Helvetica Neue';
+  src: url('../resources/fonts/helveticaneuelight.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../resources/fonts/helveticaneuemedium.ttf") format("truetype");
+  font-family: 'Helvetica Neue';
+  src: url('../resources/fonts/helveticaneuemedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../resources/fonts/helveticaneuemedium.ttf") format("truetype");
+  font-family: 'Helvetica Neue';
+  src: url('../resources/fonts/helveticaneuemedium.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../resources/fonts/helveticaneuebold.ttf") format("truetype");
+  font-family: 'Helvetica Neue';
+  src: url('../resources/fonts/helveticaneuebold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../resources/fonts/helveticaneuebold.ttf") format("truetype");
+  font-family: 'Helvetica Neue';
+  src: url('../resources/fonts/helveticaneuebold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('../resources/fonts/MarkPro-Book.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mark Pro-Bold';
+  src: url('../resources/fonts/MarkPro-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../resources/fonts/Quicksand-Medium.ttf') format('truetype');
+  // font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+// @font-face {
+//   font-family: 'Quicksand-Bold';
+//   src: url('../resources/fonts/Quicksand-Bold.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }

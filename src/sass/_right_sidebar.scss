@@ -1,0 +1,17 @@
+.right_sidebar {
+  background: rgba(21, 18, 58, 0.5);
+  position: sticky;
+  right: 0;
+  top: 0;
+  .menu_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ffffff;
+    height: 100px;
+    .menu_icon {
+      object-fit: cover;
+    }
+    border-bottom: 1px solid #ffffff;
+  }
+}

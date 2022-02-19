@@ -6,7 +6,9 @@
 @import 'modal';
 @import 'footer';
 @import 'fonts';
-
+@import 'navbar';
+@import 'left_sidebar';
+@import 'right_sidebar';
 //Pages
 @import 'home-page';
 @import 'why-nftify';
@@ -17,3 +19,12 @@
 @import 'token-information';
 @import 'latest-news';
 @import 'coming-soon';
+@import 'slam_home';
+
+//slam
+a {
+  color: unset;
+}
+a:hover {
+  color: unset;
+}

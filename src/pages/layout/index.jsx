@@ -33,7 +33,7 @@ function LayoutCommon() {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <Layout className="layout">
         <LeftSideBar />
-        <Layout>
+        <Layout className="layout-content">
           <NavBar />
           <Content>
             <Switch>

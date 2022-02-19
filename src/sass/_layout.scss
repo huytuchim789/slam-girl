@@ -1,4 +1,9 @@
 .layout {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 10fr 1fr;
+}
+.ant-layout-content {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }

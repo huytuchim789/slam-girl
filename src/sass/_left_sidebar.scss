@@ -1,5 +1,5 @@
 .left_sidebar {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
   background: rgba(21, 18, 58, 0.5);
@@ -8,13 +8,16 @@
   flex-direction: column;
   text-align: center;
   border-right: 1px solid #ffffff;
+  height: 100vh;
+  width: 8%;
+  align-self: flex-start;
   .logo_container {
     background: url('./../resources/images/Logo_slam.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid #ffffff;
-    height: $nav_height;
+    min-height: $nav_height;
     margin-bottom: 20px;
   }
   &__header {

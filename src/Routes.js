@@ -5,7 +5,7 @@ const routes = [
   {
     name: 'Home',
     path: '/',
-    component: SlamHome,
+    component: HomePage,
     exact: true,
   },
 ]

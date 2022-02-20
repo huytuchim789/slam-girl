@@ -10,7 +10,6 @@
 @import 'left_sidebar';
 @import 'right_sidebar';
 //Pages
-// @import 'home-page';
 // @import 'why-nftify';
 // @import 'nftify-overview';
 // @import 'roadmap';
@@ -19,8 +18,10 @@
 // @import 'token-information';
 // @import 'latest-news';
 // @import 'coming-soon';
-@import 'slam_home';
-
+@import 'home-page';
+@import 'banner';
+@import 'introducing';
+@import 'created_by';
 //slam
 a {
   color: unset;

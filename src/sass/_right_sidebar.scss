@@ -6,15 +6,43 @@
   height: 100vh;
   align-self: flex-start;
   width: 8%;
+  border-left: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   .menu_icon_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #ffffff;
-    height: 100px;
+    height: $nav_height;
+    min-height: $nav_height;
+    margin-bottom: 20px;
     .menu_icon {
       object-fit: cover;
     }
     border-bottom: 1px solid #ffffff;
+  }
+  &__header {
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    margin-bottom: 40px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  &__icon_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon_item {
+    width: 44px;
+    height: 42px;
+  }
+  &__icon_item ~ &__icon_item {
+    margin-top: 15px;
   }
 }

@@ -5,6 +5,8 @@ import BannerImg from './../../../resources/images/SG - 1.png'
 export default function Banner() {
   return (
     <div className="banner">
+      {' '}
+      <div className="gradient"></div>
       <img alt="img" src={BannerBG} className="img-1" />
       <img alt="img" src={BannerBG2} className="img-2" />
       <img alt="img" src={BannerImg} className="img-3" />

@@ -1,0 +1,128 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+  padding-top: 180px;
+  z-index: 1;
+  //intro
+  &__intro {
+    display: flex;
+    margin-bottom: 120px;
+    &__img {
+      position: relative;
+      left: 4%;
+      object-fit: cover;
+      z-index: 2;
+      top: -160px;
+      width: 850px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 1200px;
+      min-height: 600px;
+      background: linear-gradient(
+        259.09deg,
+        rgba(3, 2, 52, 0.6) 23.44%,
+        rgba(2, 0, 84, 0) 95.14%
+      );
+      border-left: 1px solid #ffffff;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      position: absolute;
+      right: $right_sidebar;
+      padding: 50px 160px 50px 400px;
+      &__content {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 150% */
+
+        /* Neutrals & Opacity/White/White */
+
+        color: #ffffff;
+      }
+    }
+  }
+  //content
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    position: relative;
+    left: $left_sidebar;
+    max-height: 600px;
+    width: 84%;
+    margin-bottom: 120px;
+    &-left {
+      padding-left: 100px;
+      padding-right: 200px;
+      padding-top: 50px;
+      &__header {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      &__content {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 150% */
+
+        /* Neutrals & Opacity/White/White */
+
+        color: #ffffff;
+      }
+    }
+    &-right {
+      .img-5 {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+      .img-6 {
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        right: 100px;
+        top: -200px;
+      }
+    }
+  }
+  //footer
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-top: 50px;
+    .image-15 {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      left: 15%;
+      top: -40px;
+    }
+    .image-16 {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      z-index: 2;
+      top: 100px;
+      left: 500px;
+    }
+    .image-17 {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      z-index: 3;
+      bottom: 30px;
+    }
+  }
+}

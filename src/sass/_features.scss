@@ -1,0 +1,104 @@
+.features {
+  background-color: black;
+  padding-top: 200px;
+  padding-right: 13%;
+  padding-left: 13%;
+  position: relative;
+  z-index: 2;
+  .header_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .footer_img {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    z-index: 1;
+  }
+  &__header {
+    color: #ffff00;
+    text-shadow: 0px 0px 10px #ffc000;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 120px;
+    margin-top: 120px;
+    .features__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 20px 20px;
+      background: rgba(21, 18, 58, 0.5);
+      /* Yellow */
+      position: relative;
+      border: 1px solid #ffff00;
+      box-sizing: border-box;
+      /* Yellow Glow */
+
+      box-shadow: 0px 0px 10px #ffc000;
+      &__avatar {
+        position: absolute;
+        top: -35%;
+      }
+      &__content {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 150% */
+
+        text-align: center;
+
+        /* Neutrals & Opacity/White/White */
+
+        color: #ffffff;
+      }
+      &__container {
+        min-height: 70%;
+      }
+    }
+  }
+}
+.benefits {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  padding-left: 13%;
+  padding-right: 13%;
+  z-index: 1;
+  padding-top: 300px;
+  &__container {
+    align-self: center;
+    &__header {
+      text-align: left;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 50px;
+    }
+    &__item {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+      &__content {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 38px;
+      }
+    }
+  }
+}

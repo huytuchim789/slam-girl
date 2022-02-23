@@ -1,0 +1,46 @@
+.teams {
+  background-color: black;
+  padding-left: 12%;
+  padding-right: 12%;
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    &__content {
+      background: rgba(21, 18, 58, 0.5);
+      padding: 30px 30px 0px 30px;
+      border: 1px solid #ffffff;
+
+      &__jobs {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 12px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+      }
+      &__icon {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    &__img {
+      width: 150px;
+      height: 150px;
+      border: 1px solid #ffffff;
+    }
+  }
+}

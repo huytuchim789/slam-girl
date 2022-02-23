@@ -1,13 +1,14 @@
 .navbar {
   font-family: 'Mark Pro';
-  background: rgba(21, 18, 58, 0.5);
+  background: rgba(21, 18, 58, 0);
   position: fixed;
   width: 84%;
   top: 0;
   height: $nav_height;
   background-blend-mode: multiply;
   border-bottom: 1px solid #ffffff;
-  left: 8%;
+  left: $left_sidebar;
+  z-index: 1;
   .navigation {
     display: flex;
     justify-content: center;

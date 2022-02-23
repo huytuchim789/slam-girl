@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 4;
+  width: 84%;
+  height: 100vh;
+  left: $left-sidebar;
+  background-blend-mode: multiply;
+}

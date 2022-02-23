@@ -1,6 +1,7 @@
 .home-page {
   position: relative;
   width: 100%;
+  z-index: 0;
 }
 .gradient {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));

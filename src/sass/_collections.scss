@@ -1,0 +1,54 @@
+.collections {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 300px;
+  padding-left: 10%;
+  padding-right: 10%;
+  z-index: 1;
+  gap: 50px;
+  .row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img:not(.right_arrow) {
+      width: 400px;
+      height: 400px;
+    }
+    .arrow-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .right_arrow {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img:not(.right_arrow) {
+      width: 400px;
+      height: 400px;
+    }
+    .arrow-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .left_arrow {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 850px;
+      height: 550px;
+    }
+  }
+}

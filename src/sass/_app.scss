@@ -9,6 +9,8 @@
 @import 'navbar';
 @import 'left_sidebar';
 @import 'right_sidebar';
+@import 'accordion';
+@import 'menu';
 //Pages
 // @import 'why-nftify';
 // @import 'nftify-overview';
@@ -22,6 +24,13 @@
 @import 'banner';
 @import 'introducing';
 @import 'created_by';
+@import 'story';
+@import 'collections';
+@import 'features';
+@import 'roadmap';
+@import 'the_team.scss';
+@import 'faq';
+@import 'partners';
 //slam
 a {
   color: unset;

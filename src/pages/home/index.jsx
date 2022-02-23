@@ -1,29 +1,30 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { withRouter } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import OurTeamSection from 'components/OurTeam'
-import HomeSection from 'components/Home'
-import WhyNftifySection from 'components/WhyNftify'
-import NftifyOverviewSection from 'components/NftifyOverview'
-import RoadmapSection from 'components/RoadMap'
-import BackedBy from 'components/BackedBy'
-import { BackTop } from 'antd'
-import IconArrowUp from '../../resources/images/Icon_up.svg'
-import IconArrowUpLight from '../../resources/images/Icon_up_light.svg'
+
 import { BREAKPOINT_LG, HEIGHT_SHOW_BACK_TOP } from '../../common/constant'
-import BuiltOn from 'components/BuiltOn'
 import { ThemeContext } from 'hooks/useDarkMode'
-import LatestNews from 'components/LastestNews'
-import ComingSoon from 'components/ComingSoon'
+
 import Banner from './Banner'
 import Introducing from './Introducing'
+import CreatedBy from './CreatedBy'
+import Story from './Story'
+import Collection from './Collection'
+import Features from './Features'
+import Roadmap from './Roadmap'
+import TheTeam from './TheTeam'
+import Faq from './Faq'
+import Partners from './Partners'
+import Footer from '../../components/Footer'
+import { MenuContext } from 'pages/layout'
+import Menu from 'components/Menu'
 
 function HomePage() {
   const [isMobile, setIsMobile] = useState(false)
   const [isVisibleBackTop, setIsVisibleBackTop] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const { theme } = useContext(ThemeContext)
-  const isDarkMode = theme === 'dark'
+  // const { theme } = useContext(ThemeContext)
+  // const isDarkMode = theme === 'dark'
+  const { onMenu, setOnMenu } = useContext(MenuContext)
 
   useEffect(() => {
     screenResize()
@@ -51,23 +52,38 @@ function HomePage() {
 
   return (
     <div class="home-page">
-      <div className="gradient"></div>
+      {onMenu ? <Menu /> : null}
       <section id="banner">
         <Banner />
       </section>
       <section id="introducing">
         <Introducing />
       </section>
-      <section id="created_by" className="created_by"></section>
-      <section id="collection" className="collection"></section>
-      <section id="features" className="features"></section>
-      <section id="benefits" className="benefits"></section>
-      <section id="roadmap" className="roadmap"></section>
-      <section id="the_team" className="the_team"></section>
-      <section
-        id="partner_and_comunity"
-        className="partner__and_comunity"
-      ></section>
+      <section id="created_by">
+        <CreatedBy />
+      </section>
+      <section id="story">
+        <Story />
+      </section>
+      <section id="collection">
+        <Collection />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="roadmap">
+        <Roadmap />
+      </section>
+      <section id="the_team">
+        <TheTeam />
+      </section>
+      <section id="faq">
+        <Faq />
+      </section>
+      <section id="partner_and_comunity">
+        <Partners />
+      </section>
+      <Footer />
     </div>
   )
 }

@@ -106,3 +106,13 @@
     top: 40%;
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .roadmap {
+    &__timeline {
+      .timeline_icon {
+      }
+    }
+    &__timeline::after {}
+  }
+}

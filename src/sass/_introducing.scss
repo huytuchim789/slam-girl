@@ -70,3 +70,20 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .introducing-wrapper{
+    .introducing {
+      &__left{
+        left: 10%;
+        &__content {
+          font-size: 19px;
+        }
+      }
+      &__right {
+        transform: scale(0.8);
+        right: 7%;
+      }
+    }
+  }
+}

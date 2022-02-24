@@ -88,3 +88,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .banner {
+    .img-3{
+      left: 9%;
+    }
+    &__box {
+      padding: 100px 20px 20px 300px;
+      
+      &__container {
+        &__header{
+          font-size: 70px;
+        }
+        &__content {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

@@ -52,3 +52,34 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .collections {
+    .row-1{
+      img:not(.right_arrow) {
+        width: 300px;
+        height: 300px;
+      }
+      .arrow-wrapper {
+        .right_arrow {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    .row-2 {
+      img:not(.right_arrow) {
+        width: 300px;
+        height: 300px;
+      }
+      .arrow-wrapper {
+        .left_arrow {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+}

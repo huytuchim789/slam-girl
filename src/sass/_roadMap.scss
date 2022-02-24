@@ -1,13 +1,19 @@
 .roadmap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 1;
   background-color: black;
   padding-top: 200px;
-  padding-left: 15%;
-  padding-right: 12%;
+  // padding-left: 15%;
+  width: 100%;
+  // padding-right: 12%;
   &__container {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    &-content{
+      width: 550px;
+    }
     &__header {
       text-align: left;
     }
@@ -25,6 +31,7 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 100px;
+    border-right: 1px solid #ffffff;
     .timeline_icon {
       width: 31px;
       height: 31px;
@@ -33,15 +40,15 @@
       transform: rotate(-45deg);
     }
   }
-  &__timeline::after {
-    background-color: #ffffff;
-    content: '';
-    position: absolute;
-    left: calc(100%);
-    width: 2px;
-    height: 100%;
-    top: 0;
-  }
+  // &__timeline::after {
+  //   background-color: #ffffff;
+  //   content: '';
+  //   position: absolute;
+  //   left: calc(100%);
+  //   width: 2px;
+  //   height: 100%;
+  //   top: 0;
+  // }
   // &__timeline div:first-child::before {
   //   background-color: black;
   //   content: '';
@@ -56,7 +63,7 @@
     background: rgba(21, 18, 58, 0.5);
     border: 1px solid #ffffff;
     box-sizing: border-box;
-    max-width: 500px;
+    max-width: 400px;
     &__phase {
       font-size: 24px;
     }
@@ -78,7 +85,7 @@
       position: absolute;
       width: 50px;
       height: 50px;
-      left: calc(134.5%);
+      left: calc(550px - 25px);
       top: 50%;
       transform: rotate(45deg);
       z-index: 1;
@@ -91,7 +98,6 @@
     /* Yellow Glow */
     content: '';
     filter: drop-shadow(0px 0px 10px #ffc000);
-    // transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
     position: absolute;
     width: 25px;
     height: 25px;
@@ -101,9 +107,10 @@
     background-color: black;
   }
   &__img {
-    position: absolute;
-    left: 60%;
-    top: 40%;
+    display: block;
+    margin-top: 450px;
+    width: 557px;
+    height: 942px;
   }
 }
 

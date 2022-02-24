@@ -52,7 +52,7 @@ function HomePage() {
 
   return (
     <div class="home-page">
-      {onMenu ? <Menu /> : null}
+      <Menu onMenu={onMenu} />
       <section id="banner">
         <Banner />
       </section>

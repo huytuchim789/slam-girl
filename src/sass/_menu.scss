@@ -10,4 +10,5 @@
   height: 100vh;
   left: $left-sidebar;
   background-blend-mode: multiply;
+  transition: visibility 0.5s linear 300ms, opacity 0.5s;
 }

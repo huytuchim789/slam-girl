@@ -6,8 +6,8 @@ export default function Introducing() {
     <div className="introducing-wrapper">
       <div className="introducing">
         <div className="introducing__left">
-          <span className="introducing__left__subheader">Introducing</span>
-          <span className="introducing__left__header">SLAM GIRL</span>
+          <h3 className="introducing__left__subheader">Introducing</h3>
+          <h1 className="introducing__left__header">SLAM GIRL</h1>
           <span className="introducing__left__content">
             For the first time in history, a Super Hero(ine) created by one of
             the most iconic names in Super Hero lore will be introduced to the

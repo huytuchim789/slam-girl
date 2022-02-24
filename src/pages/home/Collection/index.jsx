@@ -5,7 +5,7 @@ import collection3 from './../../../resources/images/collection_3.png'
 import collection4 from './../../../resources/images/collection_4.png'
 import collection5 from './../../../resources/images/collection_5.png'
 import collection6 from './../../../resources/images/collection_6.png'
-import collection8 from './../../../resources/images/collection_8.png'
+import collection8 from './../../../resources/images/collection_8.svg'
 import rightArrow from './../../../resources/images/right_arrow.svg'
 import leftArrow from './../../../resources/images/left_arrow.svg'
 export default function Collection() {

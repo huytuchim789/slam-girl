@@ -53,9 +53,9 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: $breakpoint_ultra_desktop_max) {
   .collections {
-    .row-1{
+    .row-1 {
       img:not(.right_arrow) {
         width: 300px;
         height: 300px;
@@ -80,6 +80,11 @@
         }
       }
     }
+    .row-3 {
+      img {
+        width: 750px;
+        height: 450px;
+      }
+    }
   }
-
 }

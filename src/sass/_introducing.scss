@@ -16,25 +16,19 @@
 
       /* identical to box height */
       &__subheader {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: bold;
         font-size: 25px;
         line-height: 25px;
         text-transform: uppercase;
-        display: block;
         margin-bottom: 24px;
+        text-align: left;
       }
       &__header {
-        display: block;
-        font-family: 'Mark Pro-Bold';
-        font-style: normal;
-        font-weight: bold;
         font-size: 47px;
         line-height: 53px;
         text-transform: uppercase;
         text-shadow: 0px 0px 10px #ffffff;
         margin-bottom: 24px;
+        text-align: left;
       }
       &__content {
         display: block;
@@ -71,18 +65,19 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .introducing-wrapper{
+@media screen and (max-width: $breakpoint_ultra_desktop_max) {
+  .introducing-wrapper {
     .introducing {
-      &__left{
+      &__left {
         left: 10%;
         &__content {
-          font-size: 19px;
+          font-size: 16px;
+          line-height: 23px;
         }
       }
       &__right {
         transform: scale(0.8);
-        right: 7%;
+        right: 3%;
       }
     }
   }

@@ -107,12 +107,19 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: $breakpoint_ultra_desktop_max) {
   .roadmap {
     &__timeline {
       .timeline_icon {
       }
     }
-    &__timeline::after {}
+    &__timeline::after {
+    }
+    &__item {
+      &__element {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
 }

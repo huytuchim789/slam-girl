@@ -27,7 +27,7 @@
     position: absolute;
     z-index: 3;
     left: 20%;
-    top: 150px;
+    top: 140px;
   }
   &__box {
     display: flex;
@@ -35,11 +35,11 @@
     border-bottom: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
     width: 50%;
-    height: 500px;
+    max-height: 700px;
     position: absolute;
     float: right;
     right: 8%;
-    top: 300px;
+    top: 400px;
     z-index: 2;
     padding: 120px 20px 20px 400px;
     background: linear-gradient(
@@ -91,20 +91,28 @@
 
 @media screen and (max-width: 1600px) {
   .banner {
-    .img-3{
-      left: 9%;
+    .img-3 {
+      left: 13%;
     }
     &__box {
       padding: 100px 20px 20px 300px;
-      
+
       &__container {
-        &__header{
+        &__header {
           font-size: 70px;
         }
         &__content {
-          font-size: 25px;
+          font-size: 24px;
         }
       }
     }
+  }
+}
+
+@media screen and(max-width:$breakpoint_extra_large_desktop_max) {
+  .banner__box__container__header {
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 28px;
   }
 }

@@ -236,3 +236,16 @@ p {
     display: none;
   }
 }
+@media screen and (max-width: $breakpoint_ultra_desktop_max) {
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 53px;
+  }
+}

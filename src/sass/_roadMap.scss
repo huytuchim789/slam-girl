@@ -11,7 +11,7 @@
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    &-content{
+    &-content {
       width: 550px;
     }
     &__header {
@@ -49,15 +49,33 @@
   //   height: 100%;
   //   top: 0;
   // }
-  // &__timeline div:first-child::before {
-  //   background-color: black;
-  //   content: '';
-  //   position: absolute;
-  //   left: calc(140%+1px);
-  //   width: 2px;
-  //   height: 100%;
-  //   top: 0;
-  // }
+  &__timeline div:first-child::before {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    content: 'BRIEF';
+    position: absolute;
+    left: -25%;
+    width: 40%;
+    height: 10%;
+    transform: rotate(-90deg);
+    top: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+  }
   &__item {
     position: relative;
     background: rgba(21, 18, 58, 0.5);
@@ -106,6 +124,7 @@
     z-index: 1;
     background-color: black;
   }
+
   &__img {
     display: block;
     margin-top: 450px;
@@ -116,6 +135,7 @@
 
 @media screen and (max-width: $breakpoint_ultra_desktop_max) {
   .roadmap {
+    padding-left: 90px;
     &__timeline {
       .timeline_icon {
       }

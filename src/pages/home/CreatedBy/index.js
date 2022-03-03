@@ -6,7 +6,17 @@ export default function CreatedBy() {
     <div className="created_by">
       <h3 className="created_by__subheader">CREATED BY </h3>
       <h1 className="created_by__header">COMIC BOOK LEGENDS</h1>
-      <div className="person_list">
+      <div
+        className="person_list"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         {persons.map((person) => (
           <div className="person_item" style={{ marginTop: person.mrTop }}>
             <div className="person_avatar">

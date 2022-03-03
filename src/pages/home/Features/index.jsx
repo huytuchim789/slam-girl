@@ -5,7 +5,7 @@ import footerImg from './../../../resources/images/features-footer_img.png'
 import benefitImg from './../../../resources/images/benefit.png'
 import benefitItemIcon from './../../../resources/images/benefit_item_icon.png'
 import { benefits } from './benefits'
-export default function Features() {
+export default function Features({ isMobile }) {
   return (
     <>
       <div className="features">

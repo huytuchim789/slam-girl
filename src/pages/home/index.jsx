@@ -54,7 +54,7 @@ function HomePage() {
     <div class="home-page">
       <Menu onMenu={onMenu} />
       <section id="banner">
-        <Banner />
+        <Banner isMobile={isMobile} />
       </section>
       <section id="introducing">
         <Introducing />
@@ -63,13 +63,13 @@ function HomePage() {
         <CreatedBy />
       </section>
       <section id="story">
-        <Story />
+        <Story isMobile={isMobile} />
       </section>
       <section id="collection">
         <Collection />
       </section>
       <section id="features">
-        <Features />
+        <Features isMobile={isMobile} />
       </section>
       <section id="roadmap">
         <Roadmap />

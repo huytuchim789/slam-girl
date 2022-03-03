@@ -10,7 +10,11 @@
     column-gap: 100px;
     row-gap: 100px;
     margin-top: 100px;
+    justify-content: center;
     justify-items: center;
+    img {
+      object-fit: contain;
+    }
   }
   &__item {
     display: flex;
@@ -34,8 +38,8 @@
     align-items: center;
 
     img {
-      width: 70px;
-      height: 70px;
+      width: 5%;
+      min-width: 40px;
     }
     img + img {
       margin-left: 60px;
@@ -50,4 +54,24 @@
   left: $left-sidebar;
   bottom: 0;
   position: absolute;
+}
+@media screen and (max-width: $breakpoint_large_desktop_max) {
+  .partners {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: $breakpoint_tablet_max) {
+  .partners {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and(max-width:$breakpoint_desktop_max) {
+  .community::after {
+    width: 100%;
+    left: 0;
+  }
 }

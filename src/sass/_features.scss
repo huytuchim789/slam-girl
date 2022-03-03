@@ -42,7 +42,7 @@
       box-shadow: 0px 0px 10px #ffc000;
       &__avatar {
         position: absolute;
-        top: -35%;
+        top: -85px;
       }
       &__content {
         font-family: 'Quicksand';
@@ -106,8 +106,7 @@
 @media screen and(max-width: $breakpoint_ultra_desktop_max) {
   .benefits {
     &__img {
-      width: 650px;
-      height: 600px;
+      width: 100%;
     }
     padding-left: $left-sidebar;
     padding-right: $right_sidebar;
@@ -122,6 +121,52 @@
         &__content {
           font-size: 22px;
           line-height: 28px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint_desktop_max) and (max-width: $breakpoint_medium_large_desktop_max) {
+  .features {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: $breakpoint_desktop_max) {
+  .features {
+    .header_img,
+    .footer_img {
+      display: none;
+    }
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media screen and (max-width: $breakpoint_medium_large_desktop_max) {
+  .benefits {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    &__img {
+      grid-row: 2/3;
+    }
+    &__container {
+      grid-row: 1/2;
+      &__header {
+        text-align: center;
+      }
+      &__subheader {
+        text-align: center;
+      }
+      &__item {
+        &__content {
+          width: 100%;
+          text-align: center;
+        }
+
+        img {
+          display: none;
         }
       }
     }

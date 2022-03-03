@@ -11,8 +11,10 @@
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     &-content {
       width: 550px;
+      // min-width: 550px;
     }
     &__header {
       text-align: left;
@@ -60,11 +62,10 @@
     height: 10%;
     transform: rotate(-90deg);
     top: 50%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     font-family: 'Quicksand';
     font-style: normal;
@@ -127,9 +128,9 @@
 
   &__img {
     display: block;
-    margin-top: 450px;
-    width: 557px;
-    height: 942px;
+    margin-top: 25%;
+    width: 45%;
+    object-fit: contain;
   }
 }
 
@@ -147,6 +148,62 @@
         font-size: 16px;
         line-height: 24px;
       }
+    }
+  }
+}
+@media screen and(min-width:$breakpoint_desktop_max) and(max-width:$breakpoint_medium_desktop) {
+  .roadmap {
+    &__container {
+      &-content {
+        width: 350px;
+        min-width: 350px;
+      }
+    }
+    &__item {
+      max-width: 300px;
+    }
+    .circle {
+      left: calc(300px + 25px);
+    }
+    &__img {
+      transform: scale(0.8);
+    }
+    &__timeline div:first-child::before {
+      height: 6%;
+    }
+  }
+}
+
+@media screen and(max-width:$breakpoint_desktop_max) {
+  .roadmap {
+    padding-left: 0;
+  }
+}
+@media screen and(max-width:$breakpoint_tablet_max) {
+  .roadmap {
+    &__container {
+      &__header {
+        text-align: center;
+      }
+      &__subheader {
+        text-align: center;
+      }
+    }
+    &__timeline {
+      border-right: none;
+      align-items: center;
+    }
+    .circle {
+      display: none;
+    }
+    &__timeline div:first-child::before {
+      transform: unset;
+
+      top: -10%;
+      left: 30%;
+    }
+    &__item {
+      width: 100%;
     }
   }
 }

@@ -41,14 +41,18 @@
     align-items: center;
   }
   &__icon_item {
-    width: 44px;
-    height: 42px;
+    width: 42px;
+    height: 40px;
   }
-  &__icon_item ~ &__icon_item {
+  a ~ a {
     margin-top: 15px;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  
+}
+@media screen and(max-width:$breakpoint_desktop_max) {
+  .right_sidebar {
+    display: none;
+  }
 }

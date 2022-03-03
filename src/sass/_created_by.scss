@@ -15,9 +15,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    flex-wrap: wrap;
     .person_item {
-      width: calc(33.333% - 10px);
+      // width: calc(33.333% - 10px);
       margin: auto;
       display: flex;
       align-items: center;
@@ -34,8 +34,7 @@
         &_img {
           position: relative;
           z-index: 1;
-          width: 400px;
-          height: 400px;
+          width: 70%;
         }
       }
       .person_content {
@@ -78,4 +77,20 @@
       }
     }
   }
+}
+@media screen and(min-width:$breakpoint_desktop_max) and(max-width:$breakpoint_medium_desktop) {
+  .created_by {
+    .person_list {
+      .person_item {
+        .person_avatar {
+          &_img {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:$breakpoint_desktop_max) {
 }

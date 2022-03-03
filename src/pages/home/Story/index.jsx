@@ -5,11 +5,20 @@ import image6 from './../../../resources/images/image 6.svg'
 import image15 from './../../../resources/images/image 15.svg'
 import image16 from './../../../resources/images/image 16.svg'
 import image17 from './../../../resources/images/image 17.svg'
-export default function Story() {
+export default function Story({ isMobile }) {
   return (
     <div className="story">
-      <div className="story__intro">
-        <img src={beer} alt="" className="story__intro__img" />
+      <div
+        className="story__intro"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="story__intro__container">
           <h1 className="story__intro__container__header">The Story</h1>
           <div className="story__intro__container__content">
@@ -28,8 +37,19 @@ export default function Story() {
             story telling for the Internet.
           </div>
         </div>
+        <img src={beer} alt="" className="story__intro__img" />
       </div>
-      <div className="story__content">
+      <div
+        className="story__content"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="story__content-left">
           <h3 className="story__content-left__header">millennial culture</h3>
           <div className="story__content-left__content">
@@ -48,7 +68,17 @@ export default function Story() {
           <img src={image6} alt="" className="img-6" />
         </div>
       </div>
-      <div className="story__footer">
+      <div
+        className="story__footer"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <img src={image16} alt="" className="image-16" />
         <img src={image15} alt="" className="image-15" />
         <img src={image17} alt="" className="image-17" />

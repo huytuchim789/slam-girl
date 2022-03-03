@@ -4,7 +4,17 @@ import Websidoe from './../../../resources/images/Websidoe.svg'
 export default function Introducing() {
   return (
     <div className="introducing-wrapper">
-      <div className="introducing">
+      <div
+        className="introducing"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="introducing__left">
           <h3 className="introducing__left__subheader">Introducing</h3>
           <h1 className="introducing__left__header">SLAM GIRL</h1>
@@ -18,7 +28,17 @@ export default function Introducing() {
         </div>
         <img alt="img" className="introducing__right" src={IntroducingImage} />
       </div>
-      <div className="websidoe">
+      <div
+        className="websidoe"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      >
         <img alt="" src={Websidoe} className="websidoe__img" />
       </div>
     </div>

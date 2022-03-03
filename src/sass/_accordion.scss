@@ -8,8 +8,23 @@
   min-height: 80px;
   padding: 20px;
   width: 45%;
+  gap: 20px;
   &__title {
     margin: 0;
+    text-align: left;
+    position: relative;
+  }
+  &__content {
+    position: relative;
+  }
+  &__content::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    height: 1px;
   }
   &__btn {
     background: none;
@@ -32,5 +47,10 @@
   &__content {
     overflow: hidden;
     transition: max-height 0.6s ease;
+  }
+}
+@media screen and(max-width:$breakpoint_medium_desktop) {
+  .accordion {
+    width: 100%;
   }
 }

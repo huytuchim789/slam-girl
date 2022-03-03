@@ -34,9 +34,9 @@ function LayoutCommon() {
   return (
     <MenuContext.Provider value={{ onMenu, setOnMenu }}>
       <Layout className="layout">
-        <LeftSideBar />
+        <LeftSideBar isMobile={isMobile} />
         <Layout className="layout-content">
-          <NavBar />
+          <NavBar isMobile={isMobile} />
           <Content>
             <Switch>
               {routes.map((route, index) => (
@@ -51,7 +51,7 @@ function LayoutCommon() {
             </Switch>
           </Content>
         </Layout>
-        <RightSideBar />
+        <RightSideBar isMobile={isMobile} />
       </Layout>
     </MenuContext.Provider>
   )

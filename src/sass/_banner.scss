@@ -26,22 +26,22 @@
   .img-3 {
     position: absolute;
     z-index: 3;
-    left: 20%;
-    top: 140px;
+    left: 13%;
+    top: 1%;
   }
   &__box {
     display: flex;
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
-    width: 50%;
+    width: 60%;
     max-height: 700px;
     position: absolute;
     float: right;
     right: 8%;
-    top: 400px;
+    top: 2.5%;
     z-index: 2;
-    padding: 120px 20px 20px 400px;
+    padding: 50px 20px 20px 400px;
     background: linear-gradient(
       259.09deg,
       rgba(3, 2, 52, 0.6) 23.44%,
@@ -117,7 +117,7 @@
   .banner {
     .img-3 {
       transform: scale(0.8);
-      left: 7%;
+      left: 0;
     }
     &__box {
       padding-left: 220px;

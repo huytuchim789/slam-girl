@@ -42,9 +42,9 @@
     }
     &__right {
       position: relative;
-      right: 12%;
+      margin-right: 10%;
       z-index: 1;
-      width: 100%;
+      width: 40%;
     }
   }
   .websidoe {
@@ -74,8 +74,6 @@
         }
       }
       &__right {
-        transform: scale(0.8);
-        right: 3%;
       }
     }
   }
@@ -85,8 +83,6 @@
     padding-top: 200px;
     .introducing {
       &__right {
-        transform: scale(0.6);
-        right: -6%;
       }
       &__left {
         max-width: 300px;
